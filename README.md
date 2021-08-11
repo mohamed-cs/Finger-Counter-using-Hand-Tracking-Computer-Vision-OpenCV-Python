@@ -8,7 +8,7 @@ Providing the accurately cropped hand image to the hand landmark model drastical
 
 The pipeline is implemented as a MediaPipe graph that uses a hand landmark tracking subgraph from the hand landmark module, and renders using a dedicated hand renderer subgraph. The hand landmark tracking subgraph internally uses a hand landmark subgraph from the same module and a palm detection subgraph from the palm detection module.</p>
 
-<img src="https://google.github.io/mediapipe/images/mobile/hand_landmarks.png" alt="hand_landmarks" width="500" height="600">
+<img src="https://google.github.io/mediapipe/images/mobile/hand_landmarks.png" alt="hand_landmarks"/>
 
 <h3>Project Flow:</h3>
 <p>Hand Tracking model from media pipe. Each hand is having landmarks comprise of 21 points. Goal is to count fingers in the right hand. First stored tip id of fingers in list. Next compare the co-ordinates to check whether finger is open or close. If open, append 1 in list and for close fingers append 0 in list. At last count total fingers and dispay it using its corresponding image and cv2.putText the count of fingers</p>
